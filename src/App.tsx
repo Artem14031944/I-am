@@ -1,17 +1,24 @@
-import React, {FC} from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { FC } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home/Home';
+import Blog from './pages/Blog/Blog';
+import Contact from './pages/Contact/Contact';
+import Works from './pages/Works/Works';
 import './App.css';
 
 const App:FC = () => {
-
-  const { recentPosts } = useSelector((state: any) => state.mainReducer);
-
-
-  console.log(recentPosts, 'recentPosts')
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/works' element={<Works/>}/>
+        </Route>
+      </Routes>
+    </>
   );
 }
 

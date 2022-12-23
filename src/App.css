@@ -7,13 +7,26 @@
   font-family: 'Heebo', sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 :root {
   --background-button: #FF6464;
   --color-blue-dark: #21243D;
-  --color-blue-white: #00A8CC;
+  --color-blue-white: #EDF7FA;
+  --color-blue: #00A8CC;
   --color-gray: #8695A4;
   --color-white: #fff;
+  --color-black: #000;
 
   --width-wrapper: 1140px;
-  --width-container: 860px;
+  --width-container: 920px;
 }
