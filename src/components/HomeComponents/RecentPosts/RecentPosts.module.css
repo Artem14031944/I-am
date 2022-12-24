@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     background: var(--color-blue-white);
-    height: 200px;
 }
 
 .content {
@@ -27,4 +26,15 @@
 .title p {
     color: var(--color-blue);
     line-height: 24px;
+}
+
+.title p:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

@@ -4,6 +4,6 @@ const FeaturedWorks:FC = () => {
   return (
     <div>FeaturedWorks</div>
   )
-}
+};
 
 export default FeaturedWorks;

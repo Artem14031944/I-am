@@ -1,0 +1,36 @@
+.card {
+    width: 418px;
+    height: 295px;
+    background: var(--color-white);
+    border-radius: 4px;
+    color: var(--color-blue-dark);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.info {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+}
+
+.center {
+    margin: 0 26px;
+}
+
+.text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    height: 3.9em;
+}
