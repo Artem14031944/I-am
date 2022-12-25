@@ -13,13 +13,11 @@ const FeaturedWorks:FC = () => {
     .catch(err => console.log(err))
   }, []);
 
-  console.log(works, 'works')
-
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Featured works</h2>
       <div className={styles.works}>
-      {works.map((work:Iitem) => <div key={work.id}><CardWork work={work}/></div>)}
+        {works.map((work:Iitem) => <div key={work.id}><CardWork work={work}/></div>)}
       </div>
     </div>
   )

@@ -1,14 +1,21 @@
-import { FC } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import BurgerMenu from '../BurgerMenu/BurgerMenu';
-import styles from './Header.module.css';
+import styles from './Menu.module.css';
 
-const Header:FC = () => {
+
+interface IMenu {
+    active: boolean;
+    setActive: any;
+};
+
+
+const Menu = ({active, setActive}:IMenu) => {
   return (
-    <>
-        <header className={styles.header}>
+    <div className={active ? `${styles.menu}${styles.active}` : styles.menu}>
+        <div className={styles.menuContent}>
             <div className={styles.links}>
                 <NavLink 
+                    onClick={() => setActive(false)}
                     to="/"
                     style={({isActive}) => ({color : isActive ? 
                         "var(--background-button)"
@@ -17,6 +24,7 @@ const Header:FC = () => {
                     Home
                 </NavLink>
                 <NavLink 
+                    onClick={() => setActive(false)}
                     to="/works"
                     style={({isActive}) => ({color : isActive ? 
                         "var(--background-button)"
@@ -25,6 +33,7 @@ const Header:FC = () => {
                     Works
                 </NavLink>
                 <NavLink 
+                    onClick={() => setActive(false)}
                     to="/blog"
                     style={({isActive}) => ({color : isActive ? 
                         "var(--background-button)"
@@ -33,6 +42,7 @@ const Header:FC = () => {
                     Blog
                 </NavLink>
                 <NavLink 
+                    onClick={() => setActive(false)}
                     to="/contact"
                     style={({isActive}) => ({color : isActive ? 
                         "var(--background-button)"
@@ -41,10 +51,9 @@ const Header:FC = () => {
                     Contact
                 </NavLink>
             </div>
-        </header>
-        <BurgerMenu/>
-    </>
+        </div>
+    </div>
   )
 };
 
-export default Header;
+export default Menu;

@@ -7,13 +7,13 @@ import styles from './Layout.module.css';
 const Layout:FC = () => {
   return (
     <div className={styles.wrapper}>
-        <Header/>
-        <div className={styles.content}>
-            <Outlet/>
-        </div>
-        <div className={styles.footer}>
-            <Footer/>
-        </div>
+      <Header/>
+      <div className={styles.content}>
+        <Outlet/>
+      </div>
+      <div className={styles.footer}>
+        <Footer/>
+      </div>
     </div>
   )
 };

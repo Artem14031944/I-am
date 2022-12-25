@@ -19,14 +19,14 @@ const CardWork: FC<Iwork> = ({work}) => {
     const { title, url, thumbnailUrl } = work;
     return (
         <div className={styles.workCard}>
-            <div  className={styles.img}>
+            <div className={styles.imgBlock}>
                 <img 
                     src={url} 
                     alt={""}
                     className={styles.img}
                 />
             </div>
-            <div>
+            <div className={styles.content}>
                 <h2 className={styles.title}>{title.toLocaleUpperCase()}</h2>
                 <div className={styles.info}>
                     <div className={styles.date}><p>2020</p></div>

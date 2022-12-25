@@ -12,6 +12,6 @@ const Home:FC = () => {
       <FeaturedWorks/>
     </div>
   )
-}
+};
 
 export default Home;

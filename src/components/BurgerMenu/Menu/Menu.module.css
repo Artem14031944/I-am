@@ -1,0 +1,41 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50px;
+    transform: translateY(-130%);
+    transition: .2s;
+    z-index: 1;
+}
+
+.menu.active {
+    transform: translateY(0);
+    transition: .2s;
+}
+
+body.menu.active {
+    overflow: hidden;
+}
+
+.menuContent {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-white);
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-top: 27px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 42px;
+    margin-left: 35px;
+}

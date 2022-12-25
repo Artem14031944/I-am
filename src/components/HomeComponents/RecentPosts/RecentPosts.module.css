@@ -6,7 +6,8 @@
 }
 
 .content {
-    width: var(--width-container);
+    width: 100%;
+    max-width: var(--width-container);
     margin: 0 auto;
     margin-top: 12px;
 }
