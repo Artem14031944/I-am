@@ -1,6 +1,8 @@
 .container {
     width: 100%;
     background: var(--color-blue-white);
+    height: auto;
+    transition: height .3s;
 }
 
 .content {
@@ -38,3 +40,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.notPosts {
+    display: flex;
+    justify-content: center;
+}
+

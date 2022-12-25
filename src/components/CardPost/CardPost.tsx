@@ -15,7 +15,7 @@ export interface Ipost {
 
 const CardPost : FC<Ipost> = ({post}) => {
 
-    const {title, body} = post;
+    const { title, body } = post;
     
     return (
         <div className={styles.card}>

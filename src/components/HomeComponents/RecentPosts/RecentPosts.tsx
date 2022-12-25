@@ -1,21 +1,26 @@
 import { FC, useEffect, useState } from 'react';
 import CardPost, { Iitem } from '../../CardPost/CardPost';
+import Loader from '../../Loader/Loader';
 import axios from 'axios';
 import styles from './RecentPosts.module.css';
 
 const RecentPosts:FC = () => {
   const [posts, setPosts] = useState([]);
   const [postLimit, setPostLimit] = useState(false);
+  const [notData, setNotData] = useState(false);
 
-  const showAllPosts = () => {
-    setPostLimit(prev => !prev);
-  }; 
+  const showAllPosts = () => setPostLimit(prev => !prev); 
 
   useEffect(() => {
+    setNotData(true)
     axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=${postLimit ? 10 : 2}`)
-    .then(({data})=> setPosts(data))
+    .then(({data}) => {
+      setNotData(false);
+      setPosts(data)
+    })
     .catch(err => console.log(err))
   }, [postLimit]);
+
 
   return (
     <div className={styles.container}>

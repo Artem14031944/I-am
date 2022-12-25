@@ -1,0 +1,50 @@
+.workCard {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-gray-white);
+}
+
+.img {
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+    margin-right: 18px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-blue-dark);
+    margin-top: -8px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+.infoPlus {
+    font-size: 20px;
+    color: var(--color-gray);
+}
+
+.date {
+    background: var(--color-blue-dark);
+    border-radius: 16px;
+    padding: 1px 5px;
+    margin-right: 26px;
+}
+
+.date p {
+    color: var(--color-white);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-blue-dark);
+}
