@@ -35,3 +35,23 @@
     line-height: 1.3em;
     height: 3.9em;
 }
+
+@media(max-width: 450px) {
+    .card {
+        height: 330px;
+    }
+
+    .title {
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 350px) {
+    .card {
+        height: 400px;
+    }
+
+    .title {
+        margin-bottom: 100px;
+    }
+}

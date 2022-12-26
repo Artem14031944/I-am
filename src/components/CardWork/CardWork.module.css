@@ -20,7 +20,6 @@
 }
 
 .img {
-    width: 100%;
     width: 246px;
     height: 180px;
     border-radius: 6px;
@@ -37,6 +36,7 @@
     display: flex;
     align-items: center;
 }
+
 .infoPlus {
     font-size: 20px;
     color: var(--color-gray);
@@ -60,4 +60,39 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--color-blue-dark);
+}
+
+@media(max-width: 450px) {
+
+    .workCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .content {
+        width: 339px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .imgBlock {
+        max-width: 339px;
+        height: 230px;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 17px;
+    }
+
+    .img {
+        width: 339px;
+        height: 230px;
+    }
 }

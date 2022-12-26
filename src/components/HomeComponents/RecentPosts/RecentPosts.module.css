@@ -47,3 +47,9 @@
     justify-content: center;
 }
 
+
+@media(max-width: 950px) {
+    .content {
+        padding: 0 15px;
+    }
+}

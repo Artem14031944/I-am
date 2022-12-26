@@ -9,17 +9,15 @@ import './App.css';
 
 const App:FC = () => {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/works' element={<Works/>}/>
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/works' element={<Works/>}/>
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;

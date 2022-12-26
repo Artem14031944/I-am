@@ -18,11 +18,13 @@ const AboutMe:FC = () => {
                 Download Resume
             </button>
         </div>
-        <img 
-            src={img_avatar} 
-            alt={"avatar"}
-            className={styles.avatar}
-        />
+        <div className={styles.blockAvatar}>
+            <img 
+                src={img_avatar} 
+                alt={"avatar"}
+                className={styles.avatar}
+            />
+        </div>
     </div>
   )
 };

@@ -12,3 +12,15 @@
     line-height: 60px;
     color: var(--color-blue-dark);
 }
+
+@media(max-width: 950px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media(max-width: 450px) {
+    .title {
+        text-align: center;
+    }
+}
