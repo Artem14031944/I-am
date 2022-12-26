@@ -62,8 +62,19 @@
     color: var(--color-blue-dark);
 }
 
-@media(max-width: 450px) {
+@media(max-width: 950px) {
+    .title {
+        margin-top: 10px;
+    }
+}
 
+@media(max-width: 850px) {
+    .info {
+        margin: 25px 0;
+    }
+}
+
+@media(max-width: 450px) {
     .workCard {
         display: flex;
         align-items: center;
