@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--width-container);
+}
+
+.title {
+    color: var(--color-blue-dark);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+}
