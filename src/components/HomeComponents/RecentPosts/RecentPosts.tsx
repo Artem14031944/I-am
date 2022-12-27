@@ -4,6 +4,7 @@ import axios from 'axios';
 import styles from './RecentPosts.module.css';
 
 const RecentPosts:FC = () => {
+
   const [posts, setPosts] = useState([]);
   const [postLimit, setPostLimit] = useState(false);
   

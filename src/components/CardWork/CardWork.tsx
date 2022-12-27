@@ -16,7 +16,8 @@ export interface Iwork {
 
 const CardWork: FC<Iwork> = ({work}) => {
 
-    const { title, url, thumbnailUrl } = work;
+    const { title, url } = work;
+    
     return (
         <div className={styles.workCard}>
             <div className={styles.imgBlock}>

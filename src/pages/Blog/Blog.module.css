@@ -16,3 +16,19 @@
     font-size: 44px;
     line-height: 60px;
 }
+
+.blogs {
+    margin-top: 55px;
+}
+
+@media(max-width: 950px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media(max-width: 375px) {
+    .title {
+        font-size: 30px;
+    }
+}

@@ -16,3 +16,13 @@
     font-size: 44px;
     line-height: 60px;
 }
+
+.works {
+    margin-top: 55px;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
